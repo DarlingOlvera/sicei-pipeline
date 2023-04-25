@@ -10,5 +10,6 @@ RUN npm install
 #copiar los archivos restantes del programa a la carpeta
 COPY ./src/sicei.js ./
 
+EXPOSE 8081
 #ejecutar la app
 CMD ["npm","start"]
