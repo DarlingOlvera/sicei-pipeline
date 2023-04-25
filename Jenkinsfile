@@ -22,7 +22,7 @@ pipeline{
                 script {
                 def imageName = "sicei_express:${env.BUILD_NUMBER}"
                 docker.build(imageName, '--build-arg NODE_ENV=production .')
-                docker.run(" -p 8081:9000", ${imageName})
+                docker.run(" -p 8081:9000 ${imageName}")
                 }
             }
         }
