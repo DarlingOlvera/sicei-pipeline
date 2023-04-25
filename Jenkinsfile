@@ -6,7 +6,7 @@ pipeline{
         stage('Checkout'){
             steps{
                 //Jalar el proyecto de git
-                git url: 'https://github.com/DarlingOlvera/Tareas.git',branch: 'dev'
+                git url: 'https://github.com/DarlingOlvera/sicei-pipeline.git',branch: 'dev'
                 
             }
         }
