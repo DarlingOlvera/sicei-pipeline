@@ -23,7 +23,7 @@ pipeline{
                     def branchName = env.GIT_BRANCH.replace('/','-')
                     def imageName = "sicei_express-${branchName}-${env.BUILD_NUMBER}"
                     docker.build(imageName,'--build-arg NODE_ENV=production .')
-                    docker.image(imageName).run("-p 8081:9000")
+                    docker.image(imageName).run("-p 9000:8081")
                 }
             }
         }
