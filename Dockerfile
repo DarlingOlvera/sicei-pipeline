@@ -8,7 +8,7 @@ COPY package*.json ./
 RUN npm install
 
 #copiar los archivos restantes del programa a la carpeta
-COPY ./src ./
+COPY . .
 
 EXPOSE 8081
 #ejecutar la app
